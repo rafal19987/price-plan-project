@@ -1,31 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>INVO Academy JS Starter with Vite</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>INVO Academy JS Starter with Vite</title>
-</head>
+  <!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
 
-<!-- In order to start your challenge, remove all the content inside <div id="home-page"></div> and start coding :) -->
-
-<body>
-  <div id="home-page">
-    <div>
-      <img src="/public/images/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-      <h1>INVO Academy JS Starter with Vite</h1>
-      <p>
-        See the README.md for more information on how to start your challenge.
-      </p>
-      <div class="card">
-        <button id="counter" type="button"></button>
-      </div>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__headline">Pricing</h1>
+        <p class="header__description">
+          Choose the right pricing for you and get started with your project.
+        </p>
+      </header>
+      <main class="plans">
+        <section class="plans__plan plan">
+          <h2 class="plan__name">Basic</h2>
+          <div class="plan__price price">
+            <span class="price__currency">$</span>
+            <span class="price__value">399</span>
+            <span class="price__term">/year</span>
+          </div>
+          <p class="plan__description">
+            For organizing every corner of your work & life.
+          </p>
+          <ul class="plan__benefits-list benefits-list">
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">Collaborative workspace</p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">7 day page history</p>
+            </li>
+          </ul>
+          <button class="plan__button">Get started</button>
+        </section>
+        <section class="plans__plan plan plan--dark-plan">
+          <h2 class="plan__name">Professional</h2>
+          <div class="plan__price price">
+            <span class="price__currency">$</span>
+            <span class="price__value">499</span>
+            <span class="price__term">/year</span>
+          </div>
+          <p class="plan__description">
+            A place for small groups to plan & get organized.
+          </p>
+          <ul class="plan__benefits-list benefits-list">
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">All features in Basic</p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">
+                Unlimited blocks for teams
+              </p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">30 day page history</p>
+            </li>
+          </ul>
+          <button class="plan__button">Get started</button>
+        </section>
+        <section class="plans__plan plan">
+          <h2 class="plan__name">Enterprise</h2>
+          <div class="plan__price price">
+            <span class="price__currency">$</span>
+            <span class="price__value">599</span>
+            <span class="price__term">/year</span>
+          </div>
+          <p class="plan__description">
+            For companies using our software to connect several teams & tools.
+          </p>
+          <ul class="plan__benefits-list benefits-list">
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">SAML SSO</p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">Private teamspaces</p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">Advanced page analytics</p>
+            </li>
+            <li class="benefits-list__item">
+              <img
+                src="/images/check.png"
+                alt="check icon"
+                class="benefits-list__img"
+              />
+              <p class="benefits-list__description">90 day page history</p>
+            </li>
+          </ul>
+          <button class="plan__button">Get started</button>
+        </section>
+      </main>
     </div>
-  </div>
-
-  <script type="module" src="/src/global-scripts/main.js"></script>
-  <script type="module" src="/src/pages/home-page/scripts/home-page.js"></script>
-</body>
-
+    <script type="module" src="/src/global-scripts/main.js"></script>
+  </body>
 </html>
