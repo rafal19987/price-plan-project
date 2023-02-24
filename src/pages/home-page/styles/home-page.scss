@@ -114,6 +114,12 @@
     width: 263px;
     height: 48px;
     letter-spacing: var(--primary-letter-space);
+    &:hover {
+      background-color: var(--button-primary-hover-color);
+    }
+    &:active {
+      background-color: var(--button-primary-pressed-color);
+    }
     &--dark-theme {
       background-color: var(--button-secondary-color);
       &:hover {
@@ -122,12 +128,6 @@
       &:active {
         background-color: var(--button-secondary-pressed-color);
       }
-    }
-    &:hover {
-      background-color: var(--button-primary-hover-color);
-    }
-    &:active {
-      background-color: var(--button-primary-pressed-color);
     }
   }
 }
@@ -187,6 +187,9 @@
   &__img {
     width: 16px;
     height: 16px;
+    &--dark-theme {
+      content: url('/images/check--dark-theme.png');
+    }
   }
   &__description {
     color: var(--primary-color);
@@ -198,6 +201,44 @@
     margin-left: 12px;
     &--dark-theme {
       color: var(--white);
+    }
+  }
+}
+
+// Tablet view
+@media screen and (min-width: 850px) {
+  .header {
+    margin: 86px 295px 48px 295px;
+    &__headline {
+      margin-left: 1px;
+    }
+    &__description {
+      margin-left: 1px;
+    }
+  }
+  .plans {
+    &__plan {
+      width: 674px;
+      height: 278px;
+    }
+  }
+
+  .plan {
+    &__price {
+      position: absolute;
+      margin: 32px 32px 0 528px;
+    }
+    &__description {
+      margin-top: 9px;
+    }
+    &__benefits-list {
+      margin-top: 24px;
+    }
+    &__button {
+      width: 260px;
+      top: 198px;
+      left: 382px;
+      padding: 17px 97px;
     }
   }
 }
